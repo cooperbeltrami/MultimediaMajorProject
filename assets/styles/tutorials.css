@@ -1,0 +1,341 @@
+/* COURSES PAGES */
+.course-wrapper {
+    padding: 30px;
+    overflow: hidden;
+}
+
+.course-list {
+    padding-top: 20px;
+}
+
+.course-category {
+    margin-left: 8px;
+    margin-right: 8px;
+
+    position: relative;
+
+    padding: 12px;
+    padding-left: 0;
+}
+
+.course-category-icon {
+    width: 50px;
+    height: 50px;
+
+    border-radius: 12px;
+    border: 2px solid #b1b1b1;
+}
+
+.course-category-title {
+    font-size: 16.5px;
+    font-weight: 500;
+
+    position: absolute;
+
+    top: 19;
+    left: 74;
+    right: 0;
+}
+
+.course-category-subtitle {
+    font-size: 12px;
+    font-weight: 500;
+
+    min-width: 266px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+
+    color: grey;
+
+    position: absolute;
+
+    top: 41;
+    left: 74;
+    right: 0;
+}
+
+.course-item {
+    width: 340px;
+    height: 430px;
+
+    margin: 8px;
+
+    border-radius: 6px;
+    display: inline-block;
+
+    background-color: rgb(254, 254, 254);
+    filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.300));
+}
+
+.course-item:hover {
+    filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0.300));
+}
+
+.course-banner {
+    width: 100%;
+    height: 180px;
+
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    background-size: cover;
+}
+
+.banner-locked {
+    filter: blur(3px);
+}
+
+.course-details-container {
+    margin: 20px;
+    height: 160px;
+
+    position: relative;
+}
+
+.course-name {
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+
+    position: absolute;
+
+    cursor: pointer;
+
+    color: rgb(38, 47, 58);
+}
+
+.course-name:hover {
+    text-decoration: underline;
+}
+
+.course-description {
+    font-size: 12px;
+    font-weight: 500;
+
+    padding-top: 12px;
+    padding-bottom: 8px;
+    color: grey;
+
+    position: absolute;
+
+    top: 40;
+
+    height: 40;
+    overflow: hidden;
+}
+
+.course-author {
+    padding-top: 10px;
+    height: 38px;
+
+    position: relative;
+    
+    top: 116;
+}
+
+.author-avatar {
+    width: 38px;
+    height: 38px;
+
+    position: absolute;
+}
+
+.created-by {
+    font-size: 11px;
+    font-weight: 500;
+    color: rgb(172, 172, 172);
+
+    position: absolute;
+
+    top: 12;
+    left: 50;
+}
+
+.author-name {
+    font-size: 13px;
+    font-weight: 500;
+
+    color: rgb(38, 47, 58);
+    
+    position: absolute;
+
+    top: 28;
+    left: 50;
+}
+
+.course-duration {
+    font-size: 13px;
+    font-weight: 500;
+    color: grey;
+
+    float: right;
+}
+
+.icofont-clock-time {
+    font-size: 22px;
+    color: grey;
+
+    position: absolute;
+
+    top: 8;
+    left: 0;
+}
+
+.duration {
+    font-size: 11px;
+    font-weight: 500;
+
+    position: relative;
+
+    top: 11;
+
+    color: grey;
+    float: right;
+}
+
+.course-bottom {
+    height: 40px;
+    border-top: 2px solid rgba(0, 0, 0, 0.065);
+
+    position: relative;
+}
+
+.author-container {
+    float: left;
+}
+
+.time-container {
+    float: right;
+
+    position: relative;
+
+    height: 38px;
+    width: 72px;
+}
+
+.course-stars {
+    position: relative;
+
+    top: 13;
+    right: 16px;
+
+    float: right;
+}
+
+.icofont-star {
+    color: yellow;
+
+    font-size: 20px;
+}
+
+.deselected {
+    color: rgb(170, 170, 170);
+}
+
+.icofont-heart {
+    color: grey;
+
+    font-size: 22px;
+}
+
+.likes-container {
+    float: left;
+    position: relative;
+}
+
+.icofont-heart {
+    font-size: 22px;
+
+    position: absolute;
+
+    top: 14;
+    left: 18px;
+}
+
+.likes {
+    font-size: 12.5px;
+    font-weight: 500;
+    width: 70px;
+
+    color: grey;
+
+    position: absolute;
+
+    top: 16;
+    left: 45;
+}
+
+.like-selected {
+    color: #FC4C86;
+}
+
+.icofont-ui-video-chat {
+    font-size: 18px;
+    font-weight: 500;
+
+    color: grey;
+
+    width: 70px;
+
+    color: grey;
+
+    position: absolute;
+
+    top: 16;
+    left: 45;
+}
+
+.comments-container {
+    position: relative;
+
+    left: 240;
+}
+
+.comments {
+    font-size: 12.5px;
+    font-weight: 500;
+    width: 35px;
+
+    color: grey;
+
+    position: absolute;
+
+    top: 15;
+    left: 72;
+}
+
+.views-container {
+    position: absolute;
+
+    left: 50;
+}
+
+.icofont-eye-alt {
+    font-size: 20px;
+    font-weight: 500;
+
+    color: grey;
+
+    width: 70px;
+
+    color: grey;
+
+    position: absolute;
+
+    top: 14;
+    left: 168;
+}
+
+.views {
+    font-size: 12.5px;
+    font-weight: 500;
+    width: 35px;
+
+    color: grey;
+
+    position: absolute;
+
+    top: 15;
+    left: 195;
+}
+

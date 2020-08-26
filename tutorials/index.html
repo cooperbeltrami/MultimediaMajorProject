@@ -1,0 +1,73 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="/assets/styles/tutorials.css">
+        <link rel="stylesheet" href="/assets/styles/global.css">
+        <link rel="stylesheet" href="/assets/font/icofont.min.css">
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="https://cdn.multicourse.com.au/img/logo.png" />
+
+        <title>MultiCourse - Courses</title>
+    </head>
+    <body>
+        <nav>
+            <div class="nav-center">
+                <!-- LEFT SIDE -->
+                <div class="nav-control left-nav" style="margin-left: 14; top: 16">
+                    <img class="nav-logo" src="https://cdn.multicourse.com.au/img/logo.png"></img>
+                </div>
+
+                <div class="nav-control left-nav" style="margin-left: 2; top: 22;">
+                    <div class="nav-logo-text">MultiCourse</div>
+                </div>
+
+                <div class="nav-control left-nav" style="margin-left: 32px;">
+                    <a class="nav-link" href="/">Home</a>
+                </div>
+
+                <div class="nav-control left-nav">
+                    <a class="nav-link selected" href="/tutorials/">Tutorials</a>
+                </div>
+
+                <!-- RIGHT SIDE -->
+                <div class="nav-control right-nav" style="right: 72; top: 18;">
+                    <div class="nav-plan">Education</div>
+                </div>
+
+                <div class="nav-control right-nav" style="top: 10; right: 8;" onclick="firebase.auth().signOut();">
+                    <img class="nav-avatar user-avatar"></img>
+                </div>
+            </div>
+        </nav>
+
+        <div class="course-wrapper">
+            <div class="course-category">
+                <img class="course-category-icon" src="https://cdn.multicourse.com.au/img/logos/premiere_pro.png"></img>
+                <div class="course-category-title">Premiere Pro for Beginners</div>
+                <div class="course-category-subtitle">Step-by-step instructions to help you develop some basic skills in video editing techniques and effects using Adobe Premiere Pro.</div>
+            </div>
+
+            <div class="course-list"></div>
+        </div>
+
+        <!-- Firebase SDK -->
+        <script defer src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+
+        <script defer src="https://www.gstatic.com/firebasejs/7.18.0/firebase-auth.js"></script>
+        <script defer src="https://www.gstatic.com/firebasejs/7.18.0/firebase-database.js"></script>
+        <script defer src="https://www.gstatic.com/firebasejs/7.18.0/firebase-analytics.js"></script>
+
+        <!-- Firebase Configuration -->
+        <script defer src="/assets/scripts/config.js"></script>
+
+        <!-- Course Script -->
+        <script defer src="/assets/scripts/tutorials.js"></script>
+
+        <!-- User Script -->
+        <script defer src="/assets/scripts/user.js"></script>
+    </body>
+</html>

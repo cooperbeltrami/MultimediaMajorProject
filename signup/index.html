@@ -1,0 +1,65 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="/assets/styles/signinout.css">
+        <link rel="stylesheet" href="/assets/styles/global.css">
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="https://cdn.multicourse.com.au/img/logo.png" />
+
+        <title>MultiCourse - Sign Up</title>
+    </head>
+    <body>
+        <!-- Blurred background -->
+        <div class="background-container"></div>
+
+        <!-- Center container -->
+        <div class="container" style="min-height: 450px;">
+            <div class="title">Sign Up</div>
+            <div class="subtitle">Sign up to MultiCourse and see how you too can build a career in multimedia today for free!</div>
+
+            <div class="inputs">
+                <div class="input-group">
+                    <div class="placeholder">Name</div>
+                    <input class="input" type="text" />
+                </div>
+
+                <div class="input-group">
+                    <div class="placeholder">Email</div>
+                    <input class="input" type="email" />
+                </div>
+
+                <div class="input-group">
+                    <div class="placeholder">Password</div>
+                    <input class="input" type="password" />
+                </div>
+
+                <div class="error">&#160</div>
+
+                <div class="button-group">
+                    <button class="button">Sign Up</button>
+                </div>
+
+                <div class="bottom-text">Already have an account? <a href="/signin/">Sign In</a></div>
+            </div>
+        </div>
+
+        <div class="copyright">&copyMultiCourse 2020. All Rights Reserved</div>
+
+        <!-- Firebase SDK -->
+        <script defer src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+
+        <script defer src="https://www.gstatic.com/firebasejs/7.18.0/firebase-auth.js"></script>
+        <script defer src="https://www.gstatic.com/firebasejs/7.18.0/firebase-database.js"></script>
+        <script defer src="https://www.gstatic.com/firebasejs/7.18.0/firebase-analytics.js"></script>
+
+        <!-- Firebase Configuration -->
+        <script defer src="/assets/scripts/config.js"></script>
+
+        <!-- Login Script -->
+        <script defer src="/assets/scripts/signup.js"></script>
+    </body>
+</html>

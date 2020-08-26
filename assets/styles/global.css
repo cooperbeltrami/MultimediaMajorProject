@@ -1,0 +1,112 @@
+@font-face {
+	font-family: Gordita;
+	font-weight: 400;
+	src: url('https://cdn.multicourse.com.au/fonts/gordita-regular.woff');
+}
+
+@font-face {
+	font-family: Gordita;
+	font-weight: 500;
+	src: url('https://cdn.multicourse.com.au/fonts/gordita-medium.woff');
+}
+
+body {
+    font-family: "Gordita", sans-serif;
+
+    margin: 0;
+    padding: 0;
+}
+
+/* NAVIGATION */
+nav {
+    height: 70px;
+    position: relative;
+
+    border-bottom: 2px solid #ebebeb;
+}
+
+.nav-center {
+    padding-top: 4px;
+}
+
+.nav-link {
+    font-size: 12.5px;
+    padding-bottom: 4px;
+    text-decoration: none;
+    font-weight: 500;
+
+    color: #afb3b8;
+}
+
+.nav-link:hover {
+    color: #FC4C86;
+    border-bottom: 2px solid;
+}
+
+.selected {
+    font-weight: 500;
+    color: #393b3f;
+}
+
+.nav-control {
+    position: relative;
+    top: 18;
+
+    margin-left: 18px;
+
+    display: inline-block;
+}
+
+.nav-logo {
+    height: 32px;
+    width: 32px;
+}
+
+.nav-logo-text {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.nav-avatar {
+    height: 40px;
+    width: 40px;
+
+    border-radius: 50%;
+    cursor: pointer;
+
+    position: absolute;
+
+    right: 10px;
+}
+
+.left-nav {
+    position: relative;
+    float: left;
+
+    top: 23;
+}
+
+.right-nav {
+    position: relative;
+    float: right;
+
+    top: 15;
+}
+
+.nav-plan {
+    font-size: 10px;
+    
+    background-color: #FC4C86;
+    color: white;
+
+    padding: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+
+    border-radius: 12px;
+
+    position: absolute;
+
+    top: 2;
+    right: 0;
+}

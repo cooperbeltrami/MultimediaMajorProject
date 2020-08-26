@@ -1,0 +1,132 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="/assets/styles/style.css">
+        <link rel="stylesheet" href="/assets/styles/global.css">
+        <link rel="stylesheet" href="/assets/font/icofont.min.css">
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="https://cdn.multicourse.com.au/img/logo.png" />
+
+        <title>MultiCourse</title>
+    </head>
+    <body>
+        <nav>
+            <div class="nav-center">
+                <!-- LEFT SIDE -->
+                <div class="nav-control left-nav" style="margin-left: 14; top: 16">
+                    <img class="nav-logo" src="https://cdn.multicourse.com.au/img/logo.png"></img>
+                </div>
+
+                <div class="nav-control left-nav" style="margin-left: 2; top: 22;">
+                    <div class="nav-logo-text">MultiCourse</div>
+                </div>
+
+                <div class="nav-control left-nav" style="margin-left: 32px;">
+                    <a class="nav-link" href="/">Home</a>
+                </div>
+
+                <div class="nav-control left-nav">
+                    <a class="nav-link" href="/tutorials/">Tutorials</a>
+                </div>
+
+                <!-- RIGHT SIDE -->
+                <div class="nav-control right-nav" style="right: 72; top: 18;">
+                    <div class="nav-plan">Education</div>
+                </div>
+
+                <div class="nav-control right-nav" style="top: 10; right: 8;" onclick="firebase.auth().signOut();">
+                    <img class="nav-avatar user-avatar"></img>
+                </div>
+            </div>
+        </nav>
+
+        <div class="lower-container">
+            <div class="container-left">
+                <div class="video-main-container">
+
+                    <!-- VIDEO ELEMENT -->
+                    <video controls class="video-container" controlsList="nodownload"></video>
+
+                    <div class="video-lower">
+                        <div class="btn-lower-video rt btn-like">
+                            <i class="icofont-heart"></i>
+                            <p>Like</p>
+                        </div>
+
+                        <div class="btn-lower-video" style="margin: 0; cursor: default;">
+                            <p class="video-meta"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+                
+                <div class="description-main-container">
+                    <div class="author-container">
+                        <img class="author-avatar"></img>
+                        
+                        <div class="author-stats">
+                            <div class="video-title"></div>
+                            <div class="author-details"></div>
+                        </div>
+                    </div>
+
+                    <div class="description-container">
+                        <div class="video-description"></div>
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="comments-container">
+                    <div class="comments-title"></div>
+
+                    <div class="enter-comment">
+                        <img class="enter-comment-avatar user-avatar"></img>
+                        <input class="enter-comment-text" placeholder="Add a public comment..."></input>
+                        <button class="send-comment-button">Comment</button>
+                    </div>
+
+                    <div class="divider" style="margin-top: 44px; margin-left: -18px;"></div>
+
+                    <div class="comments-list"></div>
+                </div>
+            </div>
+            <div class="container-right">
+                <div class="steps-container">
+                    <div class="steps-top">
+                        <div class="course-difficulty"></div>
+                        <div class="course-name"></div>
+
+                        <div class="step-divider"></div>
+                        <div class="step-title">Tutorial Steps</div>
+                    </div>
+                    <div class="steps-list"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Firebase SDK -->
+        <script defer src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+
+        <script defer src="https://www.gstatic.com/firebasejs/7.18.0/firebase-auth.js"></script>
+        <script defer src="https://www.gstatic.com/firebasejs/7.18.0/firebase-database.js"></script>
+        <script defer src="https://www.gstatic.com/firebasejs/7.18.0/firebase-analytics.js"></script>
+
+        <!-- Firebase Configuration -->
+        <script defer src="/assets/scripts/config.js"></script>
+
+        <!-- Video Script -->
+        <script src="/assets/scripts/video.js"></script>
+
+        <!-- Tutorial Script -->
+        <script defer src="/assets/scripts/tutorial.js"></script>
+
+        <!-- User Script -->
+        <script defer src="/assets/scripts/user.js"></script>
+    </body>
+</html>

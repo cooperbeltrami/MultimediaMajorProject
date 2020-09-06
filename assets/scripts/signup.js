@@ -23,7 +23,7 @@ document.getElementsByClassName('button')[0].addEventListener('click', () => {
                     displayName: name,
                     photoURL: photo
                 }).then(() => {
-                    window.location.href = "/courses/";
+                    window.location.href = "/tutorials/";
                 });
             });
         }).catch(err => {
